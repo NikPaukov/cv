@@ -1,0 +1,174 @@
+
+.content{
+    display: block;
+    margin: 5% auto 0 auto;
+    background-color:#EFEFEF;
+    max-width: 210mm;
+    min-height: 297mm;
+
+}
+
+body{background-color: gray;
+    font-family: url(/lib/Montserrat-VariableFont_wght.ttf);
+    background-image: url(/lib/imgs/bg-10.jpg);
+    background-size: 40%;
+    background-attachment: fixed;
+    display: flex;
+      
+}
+nav a{
+    text-decoration: none;
+    color: #F0EEF1;
+}
+nav a:hover{
+    background-color: rgba(225, 225, 225, 0.3);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    height: 17%;
+}
+#name-div{
+    position: relative;
+    left: 20%;
+    margin-top: 50px;
+    color: #39353B;
+}
+#name{
+    font-size: 400%;
+}
+#occupation{
+    font-size: 200%;
+}
+#my-photo{
+    height: 100%;
+    width: 27.5%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #363338;
+    color: #F0EEF1;
+    padding: 7px 40px;
+    font-size: 14px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    word-break: break-all;
+}
+.nav-hr{
+    border-radius: 20%;
+    opacity: 0.7;
+    margin: 0 3%;
+    background-color: #F0EEF1;
+}
+.nav-img{
+    width: 30px;
+    margin-right:5px;
+    height: 30px;
+}
+.nav-top-text{
+    margin-bottom: 5px;
+}
+.nav-bottom-text{
+    font-size: 12px;
+}
+.left-side{
+    width: 23%;
+    padding-top: 5%;
+    padding-left: 5%;
+    background-color: #EED4D8;
+    color: #493B41;
+}
+.info{
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+.left-side hr{
+    height: 1.5px;
+    opacity: 0.7;
+    border-radius: 20%;
+    margin-bottom: 10px;
+    background-color: #493B41;
+}
+.left-side h1{
+    font-size: 25px;
+}
+.left-side ul{
+    font-size: 14px;
+    word-break:break-all;
+}
+.left-side li{
+    margin-bottom: 5%;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+.right-side{
+    width: 65%;
+    word-break: break-all;
+    padding: 40px;
+   
+}
+.left-side ul li ul{
+    margin-left: 40px;
+    list-style:disc;
+}
+.right-side h1{
+    font-size: 30px;
+}
+.right-side hr{
+    height: 2px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    background-color:#363338;
+    width: 80%;
+    opacity: 0.7;
+}
+.right-side ul{
+    list-style:disc;
+    padding-left: 40px;
+}
+@media screen and (max-width: 480) {
+   
+    nav{
+        flex-direction: column;
+        padding: 10px 5px;
+    }
+    .contact{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    } 
+    #name-div{
+        position: relative;
+        left: 2%;
+        margin: 10px 0;
+    }
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        height: auto;
+        text-align: center;
+    }
+    #my-photo{
+        display: none;
+    }
+    #name{
+        text-align: center;
+    }
+    main{
+        flex-direction: column;
+    }
+    .left-side{
+        width: 95%;
+    }
+    .right-side{
+        padding: 0 5% 0 5%;
+        width: 95%;
+    }
+}
