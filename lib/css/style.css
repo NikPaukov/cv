@@ -3,9 +3,8 @@
     display: block;
     margin: 5% auto 0 auto;
     background-color:#EFEFEF;
-    max-width: 210mm;
-    min-height: 297mm;
-
+    width: 210mm;
+    height: 297mm;
 }
 
 body{background-color: gray;
@@ -42,7 +41,7 @@ header{
 }
 #my-photo{
     height: 100%;
-    width: 27.5%;
+    width: 27.2%;
 }
 
 nav{
