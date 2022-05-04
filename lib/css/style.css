@@ -1,32 +1,39 @@
 
-body{background-color: gray;
+
+@font-face {
+    font-family: 'CvFont';
+    src: url(/cv/lib/font/Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+
+body{
     background: linear-gradient(45deg, rgba(0,0,0,1) 35%, rgba(255,255,255,1) 100%);
-    font-family: url(/lib/Montserrat-VariableFont_wght.ttf);
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'CvFont';
+    width: 100%;
+    height: 100%;
       
 }
 .content{
     display: flex;
     flex-direction: column;
-    margin: 5% auto 0 auto;
+    margin: 5% auto 5% auto;
     background-color:#EFEFEF;
-    width: 210mm;
+    font-size: 16px;
     position: relative;
+    width: 210mm;
     height: 297mm;
-    margin-bottom: 5%;
 }
 
 
 
 header{
-    
     display: flex;
-    flex-direction: row;
-    flex-basis: 17%;
+    flex-basis: 15%;
 }
 #name-div{
-    position: relative;
-    left: 20%;
-    margin-top: 50px;
+    margin-top: 7%;
+    margin-left: 10%;
     color: #39353B;
 }
 #name{
@@ -37,7 +44,7 @@ header{
 }
 #my-photo{
     height: 100%;
-    width: 27.2%;
+    width: 30%;
 }
 
 nav{
@@ -45,8 +52,8 @@ nav{
     justify-content: center;
     background-color: #363338;
     color: #F0EEF1;
-    padding: 7px 40px;
-    font-size: 14px;
+    padding: 1% 5%;
+    height: 3%;
 }
 nav a{
     text-decoration: none;
@@ -58,6 +65,7 @@ nav a:hover{
 .contact{
     display: flex;
     flex-direction: row;
+    font-size: 80%;
     word-break: break-all;
 }
 .nav-hr{
@@ -75,18 +83,22 @@ nav a:hover{
     margin-bottom: 5px;
 }
 .nav-bottom-text{
-    font-size: 12px;
+    font-size: 70%;
 }
 .left-side{
-    flex-basis: 23%;
+    flex-basis: 25%;
     padding-top: 5%;
+    position: relative;
+    height: 96.7%;
     padding-left: 5%;
+        display: flex;
+    flex-direction: column;
     background-color: #EED4D8;
     color: #493B41;
 }
 .info{
-    margin-bottom: 30px;
-    margin-right: 10px;
+    margin-top: 10%;
+    margin-right: 0;
 }
 .left-side hr{
     height: 1.5px;
@@ -95,33 +107,34 @@ nav a:hover{
     margin-bottom: 10px;
     background-color: #493B41;
 }
-.left-side h1{
-    font-size: 25px;
+.left-side h2{
+    font-size: 140%;
 }
 .left-side ul{
-    font-size: 14px;
     word-break:break-all;
 }
 .left-side li{
+    font-size: 85%;
     margin-bottom: 5%;
 }
 main{
     display: flex;
     flex-direction: row;
-    flex-basis: 100%;
+    flex-basis: 60%;
 }
 .right-side{
-    flex-basis: 65%;
+    flex-basis: 60%;
     word-break: break-all;
-    padding: 40px;
+    height: 100%;
+    padding: 5% 5% 0 5%;
    
 }
 .left-side ul li ul{
     margin-left: 40px;
     list-style:disc;
 }
-.right-side h1{
-    font-size: 30px;
+.right-side h2{
+    font-size: 200%;
 }
 .right-side hr{
     height: 2px;
@@ -139,9 +152,12 @@ main{
    .content{
        height: auto;
    }
+   .info{
+       margin-top: 3%;
+   }
     nav{
         flex-direction: column;
-        padding: 10px 5px;
+        padding: 1% 5px;
     }
     .contact{
         margin-bottom: 5px;
@@ -163,7 +179,7 @@ main{
     }
     #name-div{
         position: relative;
-        left: 2%;
+        margin-left: 2%;
         margin: 10px 0;
     }
     main{
@@ -172,6 +188,10 @@ main{
     .left-side{
         width: 95%;
         height: auto;
+    }
+    .left-side li{
+        margin-bottom: 1%;
+
     }
     .right-side{
         padding: 5% ;
